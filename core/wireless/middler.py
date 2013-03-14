@@ -1,4 +1,4 @@
-#! /usr/bin/python
+#! /usr/bin/env python
 """ Script to automate a reaver scan"""
 """setup
    interface
@@ -24,8 +24,11 @@ if setup == "y":
 
 """start the script"""
 print "[+] What monitor interface should be used?"
+
+# add
 monInterface = raw_input()
 if monInterface == "":
+
     monInterface = mon0 #default to mon0
 # spoof the mon mac
 print "Spoofing the mac of " + monInterface

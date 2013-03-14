@@ -4,3 +4,6 @@ def retBanner(ip, port):
     s = socket.socket()
     s.connect((ip) + (port))
     ans = s.recv(1024)
+    
+if __name__ == '__main__':
+    retBanner(ip, port)

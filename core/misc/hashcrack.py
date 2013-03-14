@@ -24,6 +24,16 @@ def printhelp():
     print "\thashforce.py <hash> -c abcdef -r 9 -w wl.txt"
     print "\thashforce.py <hash> -r 3 -w wl.txt"
     print "Press Enter to exit!",
+    """
+    Needed:
+        hash
+        option
+        rounds
+        round type
+        brute or wordlist
+        dyn charset
+        wordlist location
+    """
     raw_input()
     exit()
 if len(sys.argv)<5:
@@ -39,7 +49,7 @@ reptable={'-Rt':'rtype','-r':'rounds','-w':'wfile','-b':'brutef','-c':'charset',
 brutef=False
 notfullch=False
 rounds=0
-hlens={32:md5,40:sha1,56:sha224,64:sha256,96:sha384,128:sha512}
+hlens={32:md5vbn,40:sha1,56:sha224,64:sha256,96:sha384,128:sha512}
 hlensstr={32:"md5",40:"sha1",56:"sha224",64:"sha256",96:"sha384",128:"sha512"}
 num=0
 pwhash=chrl=fullch=htype=""

@@ -14,11 +14,11 @@ sniff on at0
 will eventually get a 169.xx.xx.xx (no dhcp autoconf)
 
 ifconfig at0 in same range as attack with net mask 255.255.255.0
-""""
-""""
+
+
 for mitm with relay
 bring up two adapters
-""""
+
 #!/usr/bin/python
 import os
 InternetFacing = raw_input("What is your first interface: ")
